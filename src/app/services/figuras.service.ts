@@ -13,4 +13,8 @@ export class FigurasService {
   registerUnit(unidad:Figuras, escuadra:string){
     return this.firestore.collection(escuadra).add(unidad);
   }
+
+  getUnits() {
+    return this.firestore.collection('Unidades_WH').snapshotChanges();
+  }
 }

@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'new-unit',
-    loadChildren: () => import('./paginasCaseras/new-unit/new-unit.module').then( m => m.NewUnitPageModule)
+    path: 'add-units',
+    loadChildren: () => import('./pages/add-units/add-units.module').then( m => m.AddUnitsPageModule)
   }
 ];
 @NgModule({

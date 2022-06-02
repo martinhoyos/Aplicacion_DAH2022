@@ -1,13 +1,15 @@
+import {Armas} from '../models/armas'
+
 export class Figuras {
-    name: string;
+    nombre: string;
     movimiento: number;
-    habilidadCombate: string;
-    habilidadDisparo: string;
+    habilidad_combate: string;
+    habilidad_disparo: string;
     fuerza: number;
     dureza: number;
     heridas: number;
     ataques: number;
     liderazgo: number;
     salva: string;
-    habilidades: string[];
+    armas: Armas[];
 }
